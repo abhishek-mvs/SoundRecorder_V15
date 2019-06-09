@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/animeshpc/tharun/SoundRecorder-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/res/values-w600dp/values.xml",
+                    "from": {
+                        "startLines": "3,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,121",
+                        "endColumns": "63,54",
+                        "endOffsets": "115,171"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,119",
+                        "endColumns": "63,54",
+                        "endOffsets": "114,169"
+                    }
+                }
+            ]
+        }
+    ]
+}

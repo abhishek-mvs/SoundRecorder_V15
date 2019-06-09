@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jpardogo.materialtabstrip:library:1.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c8942f89edface194186a04e3ffc71fa/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c8942f89edface194186a04e3ffc71fa/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jpardogo.materialtabstrip/library/1.0.6/7b2d4d03bc452fa60f22d37f3bce63caf2e238ab/library-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

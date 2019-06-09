@@ -1,0 +1,157 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/AndroidManifest.xml:14:4-17:12
+MERGED from [com.android.support:cardview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/94951b91f381d684cd24becbc72eef6b/AndroidManifest.xml:14:4-17:12
+MERGED from [com.melnykov:floatingactionbutton:1.1.0] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/ffb9eb9ae2b2753438da0238c503a3e4/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:14:4-20:12
+MERGED from [com.jpardogo.materialtabstrip:library:1.0.6] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/c8942f89edface194186a04e3ffc71fa/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/522ea2e52b8bbe5cc04e7ac57cf1afe4/AndroidManifest.xml:14:4-17:12
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:1-48:12
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:5:5-71
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:5:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.INTERNET
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:9:22-64
+application
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:12:5-46:19
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:cardview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/94951b91f381d684cd24becbc72eef6b/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:cardview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/94951b91f381d684cd24becbc72eef6b/AndroidManifest.xml:16:5-19
+MERGED from [com.melnykov:floatingactionbutton:1.1.0] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/ffb9eb9ae2b2753438da0238c503a3e4/AndroidManifest.xml:12:5-20
+MERGED from [com.melnykov:floatingactionbutton:1.1.0] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/ffb9eb9ae2b2753438da0238c503a3e4/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:17:5-19:19
+MERGED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:17:5-19:19
+MERGED from [com.jpardogo.materialtabstrip:library:1.0.6] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/c8942f89edface194186a04e3ffc71fa/AndroidManifest.xml:9:5-20
+MERGED from [com.jpardogo.materialtabstrip:library:1.0.6] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/c8942f89edface194186a04e3ffc71fa/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/522ea2e52b8bbe5cc04e7ac57cf1afe4/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/522ea2e52b8bbe5cc04e7ac57cf1afe4/AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:15:9-41
+	android:icon
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:14:9-45
+	android:allowBackup
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:16:9-40
+activity#com.danielkim.soundrecorder.activities.MainActivity
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:17:9-26:20
+	android:screenOrientation
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:19:13-49
+	android:label
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:18:13-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:24:27-74
+activity#com.danielkim.soundrecorder.activities.SettingsActivity
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:27:9-35:20
+	android:screenOrientation
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:29:13-49
+	android:parentActivityName
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:31:13-66
+	android:label
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:30:13-52
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:28:13-56
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:32:13-34:87
+	android:value
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:34:17-84
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:33:17-63
+provider#android.support.v4.content.FileProvider
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:39:13-47
+	android:authorities
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:38:13-75
+	android:exported
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:40:13-37
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:37:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:41:13-43:53
+	android:resource
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:43:17-50
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:42:17-67
+service#com.danielkim.soundrecorder.RecordingService
+ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:45:9-53
+	android:name
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml:45:18-50
+uses-sdk
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:cardview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/94951b91f381d684cd24becbc72eef6b/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:cardview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/94951b91f381d684cd24becbc72eef6b/AndroidManifest.xml:15:5-42
+MERGED from [com.melnykov:floatingactionbutton:1.1.0] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/ffb9eb9ae2b2753438da0238c503a3e4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.melnykov:floatingactionbutton:1.1.0] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/ffb9eb9ae2b2753438da0238c503a3e4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:15:5-42
+MERGED from [com.jpardogo.materialtabstrip:library:1.0.6] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/c8942f89edface194186a04e3ffc71fa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jpardogo.materialtabstrip:library:1.0.6] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/c8942f89edface194186a04e3ffc71fa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/522ea2e52b8bbe5cc04e7ac57cf1afe4/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/522ea2e52b8bbe5cc04e7ac57cf1afe4/AndroidManifest.xml:15:5-42
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/animeshpc/tharun/SoundRecorder-master/app/src/main/AndroidManifest.xml
+activity#android.support.v7.widget.TestActivity
+ADDED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:18:9-115
+	android:label
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:18:19-59
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] /home/animeshpc/.gradle/caches/transforms-2/files-2.1/05f172a08d7831376fe52f3a52895974/AndroidManifest.xml:18:60-113

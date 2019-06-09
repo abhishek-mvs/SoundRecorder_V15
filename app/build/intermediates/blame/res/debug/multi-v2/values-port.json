@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/animeshpc/tharun/SoundRecorder-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/res/values-port/values.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "55",
+                        "endOffsets": "107"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
