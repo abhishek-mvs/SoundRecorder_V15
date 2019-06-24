@@ -1,37 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/home/animeshpc/tharun/SoundRecorder-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/animeshpc/tharun/SoundRecorder-master(edited) /app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
-                {
-                    "source": "/home/animeshpc/tharun/SoundRecorder-master/app/src/main/res/values-v21/styles.xml",
-                    "from": {
-                        "startLines": "3,27",
-                        "startColumns": "4,4",
-                        "startOffsets": "56,1248",
-                        "endLines": "24,39",
-                        "endColumns": "12,12",
-                        "endOffsets": "1195,2037"
-                    },
-                    "to": {
-                        "startLines": "4,293",
-                        "startColumns": "4,4",
-                        "startOffsets": "155,21756",
-                        "endLines": "25,305",
-                        "endColumns": "12,12",
-                        "endOffsets": "1294,22545"
-                    }
-                },
-                {
-                    "source": "/home/animeshpc/tharun/SoundRecorder-master/app/src/main/res/values-v21/colors.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                },
                 {
                     "source": "/home/animeshpc/.gradle/caches/transforms-2/files-2.1/51eae8e2928a764db5feed3807090670/res/values-v21/values.xml",
                     "from": {
@@ -52,7 +23,36 @@
                     }
                 },
                 {
-                    "source": "/home/animeshpc/tharun/SoundRecorder-master/app/src/main/res/values-v21/dimens.xml",
+                    "source": "/home/animeshpc/tharun/SoundRecorder-master(edited) /app/src/main/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "3,27",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,1248",
+                        "endLines": "24,39",
+                        "endColumns": "12,12",
+                        "endOffsets": "1195,2037"
+                    },
+                    "to": {
+                        "startLines": "4,293",
+                        "startColumns": "4,4",
+                        "startOffsets": "155,21756",
+                        "endLines": "25,305",
+                        "endColumns": "12,12",
+                        "endOffsets": "1294,22545"
+                    }
+                },
+                {
+                    "source": "/home/animeshpc/tharun/SoundRecorder-master(edited) /app/src/main/res/values-v21/colors.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                },
+                {
+                    "source": "/home/animeshpc/tharun/SoundRecorder-master(edited) /app/src/main/res/values-v21/dimens.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

