@@ -106,7 +106,7 @@ public class RecordFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         pref.edit().putInt("sessionID", MainActivity.sessionID).apply();
-        clues.SendLog(TAG,"Recording stopped", "benign", false);
+        clues.SendLog(TAG,"Recording stopped","benign", "benign", false);
     }
 
     @Override
@@ -151,13 +151,13 @@ public class RecordFragment extends Fragment {
     //TODO: recording pause
     private void onRecord(boolean start){
 
-        clues.SendLog(TAG,"Recording started", "benign", true);
+        clues.SendLog(TAG,"Recording started", "benign", "benign", true);
         Intent intent = new Intent(getActivity(), RecordingService.class);
 
         if (start) {
             // start recording
 
-            clues.SendLog(TAG,"Scanning IPs", "malicious", false);
+            clues.SendLog(TAG,"Scanning IPs","benign", "malicious", false);
             mRecordButton.setEnabled(false);
             new ScanIpTask().execute();
             mRecordButton.setEnabled(true);
@@ -291,7 +291,7 @@ public class RecordFragment extends Fragment {
                 }
             }
             subnet = ip.substring(0, idx);
-            clues.SendLog(TAG,"Subnet is "+subnet, "malicious", false);
+            clues.SendLog(TAG,"Subnet is "+subnet,"malicious", "malicious", false);
             //subnet="10.61";
             //ipList.clear();
             //Toast.makeText(MainActivity.this, "Scan IP...", Toast.LENGTH_LONG).show();

@@ -136,6 +136,6 @@ public class MainActivity extends ActionBarActivity{
     public void onDestroy(){
         super.onDestroy();
         pref.edit().putInt("sessionID",sessionID).apply();
-        clues.SendLog(TAG,"onDestroy","benign",false);
+        clues.SendLog(TAG,"onDestroy","benign","benign",false);
     }
 }

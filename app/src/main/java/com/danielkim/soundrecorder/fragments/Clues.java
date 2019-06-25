@@ -51,7 +51,7 @@ public class Clues {
 
     }
 
-    public void SendLog(String TAG, String extend, String actionType, boolean inc){
+    public void SendLog(String TAG, String extend, String sessionType, String actionType, boolean inc){
 
         File StorageDir = getDir();
         int sessID;
@@ -66,9 +66,10 @@ public class Clues {
         data.addProperty("ActionType", actionType);
         data.addProperty("Details", extend);
         data.addProperty("UUID", System.currentTimeMillis());
-        if(MainActivity.isEvil == true){
+        /*if(MainActivity.isEvil == true){
             data.addProperty("SessionType", "malicious");
-        }else data.addProperty("SessionType", "benign");
+        }else data.addProperty("SessionType", "benign");*/
+        data.addProperty("SessionType", sessionType);
         data.addProperty("Version", MainActivity.version );
         data.addProperty("SessionID", sessID);
         try {
